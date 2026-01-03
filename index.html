@@ -17,20 +17,19 @@
     
     <style>
         :root {
-            --primary: #FFA000;
-            --primary-dark: #FF8F00;
-            --primary-light: #FFB74D;
-            --secondary: #2196F3;
-            --secondary-dark: #1976D2;
-            --accent: #FF5722;
+            --primary: #3A86FF;
+            --primary-dark: #2667CC;
+            --primary-light: #6BA4FF;
+            --secondary: #FF595E;
+            --secondary-dark: #E53E43;
+            --accent: #FF9E00;
             --dark: #1A1A2E;
             --light: #F8FAFF;
             --gray: #5F6C7B;
             --gray-light: #E2E8F0;
             --whatsapp: #25D366;
-            --gradient: linear-gradient(135deg, #FFA000 0%, #FF8F00 100%);
-            --gradient-secondary: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-            --gradient-menu: linear-gradient(135deg, rgba(255, 160, 0, 0.95) 0%, rgba(255, 143, 0, 0.95) 100%);
+            --gradient: linear-gradient(135deg, #3A86FF 0%, #2667CC 100%);
+            --gradient-secondary: linear-gradient(135deg, #FF595E 0%, #E53E43 100%);
             --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
             --shadow: 0 8px 24px rgba(0,0,0,0.1);
             --shadow-lg: 0 16px 48px rgba(0,0,0,0.15);
@@ -77,11 +76,11 @@
         }
 
         h1 span {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+            background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+            text-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
         }
 
         h2 {
@@ -124,18 +123,17 @@
             padding: clamp(4rem, 8vw, 6rem) 0;
         }
 
-        /* Header - Sadece Logo - SARI MENÜ */
+        /* Header - Sadece Logo */
         header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background: var(--gradient-menu);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
             z-index: 1000;
             padding: 1rem 0;
-            border-bottom: 1px solid rgba(255, 160, 0, 0.2);
-            box-shadow: 0 4px 20px rgba(255, 160, 0, 0.2);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         .header-container {
@@ -155,34 +153,32 @@
         .logo-icon {
             width: 50px;
             height: 50px;
-            background: rgba(255, 255, 255, 0.9);
+            background: var(--gradient);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--primary);
+            color: white;
             font-size: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .logo-text {
             font-family: 'Poppins', sans-serif;
             font-size: 2rem;
             font-weight: 800;
-            color: white;
+            color: var(--dark);
             letter-spacing: -0.5px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
         .logo-text span {
-            color: rgba(255, 255, 255, 0.95);
+            color: var(--primary);
         }
 
         /* Hero Section */
         .hero {
             padding-top: 10rem;
             padding-bottom: 6rem;
-            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
             position: relative;
             overflow: hidden;
         }
@@ -194,7 +190,7 @@
             right: -20%;
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, rgba(255, 160, 0, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(58, 134, 255, 0.1) 0%, transparent 70%);
             border-radius: 50%;
         }
 
@@ -219,7 +215,6 @@
             font-size: 0.9rem;
             margin-bottom: 2rem;
             box-shadow: var(--shadow-sm);
-            border: 1px solid rgba(255, 160, 0, 0.2);
         }
 
         .hero-cta-box {
@@ -228,7 +223,7 @@
             padding: 3rem;
             margin-top: 3rem;
             box-shadow: var(--shadow-lg);
-            border: 1px solid rgba(255, 160, 0, 0.1);
+            border: 1px solid rgba(0,0,0,0.05);
         }
 
         .phone-large {
@@ -240,14 +235,13 @@
             text-decoration: none;
         }
 
-        /* Hero Image Container - TAM BOY ve DÜZGÜN GÖRÜNTÜ */
+        /* Hero Image Container */
         .hero-image-container {
             position: relative;
             border-radius: var(--radius-xl);
             overflow: hidden;
             box-shadow: var(--shadow-xl);
             height: 500px;
-            width: 100%;
         }
 
         .hero-image {
@@ -269,18 +263,6 @@
             background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
             padding: 2rem;
             color: white;
-        }
-
-        /* Mobilde Gösterilecek Resim Container */
-        .mobile-image-container {
-            display: none;
-            position: relative;
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-xl);
-            margin: 3rem auto 0;
-            width: 100%;
-            max-width: 600px;
         }
 
         /* Gallery Section - Kaydırmalı Galeri */
@@ -388,7 +370,7 @@
         .service-icon {
             width: 70px;
             height: 70px;
-            background: linear-gradient(135deg, rgba(255, 160, 0, 0.1) 0%, rgba(255, 160, 0, 0.05) 100%);
+            background: linear-gradient(135deg, rgba(58, 134, 255, 0.1) 0%, rgba(58, 134, 255, 0.05) 100%);
             border-radius: 18px;
             display: flex;
             align-items: center;
@@ -500,7 +482,7 @@
 
         .btn-secondary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 32px rgba(33, 150, 243, 0.3);
+            box-shadow: 0 12px 32px rgba(255, 89, 94, 0.3);
         }
 
         .btn-whatsapp {
@@ -611,7 +593,7 @@
             overflow: hidden;
         }
 
-        /* Responsive */
+        /* Responsive - Sadece Mobilde Resmi Gizle */
         @media (max-width: 1024px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -632,14 +614,9 @@
         }
 
         @media (max-width: 768px) {
-            /* Mobilde resmi daha altta göster */
+            /* Mobilde resmi gizle */
             .hero-image-container {
                 display: none;
-            }
-            
-            .mobile-image-container {
-                display: block;
-                height: 400px;
             }
             
             .header-container {
@@ -712,11 +689,6 @@
             section {
                 padding: 3rem 0;
             }
-            
-            .mobile-image-container {
-                height: 300px;
-                margin: 2rem auto 0;
-            }
         }
 
         /* Animations */
@@ -747,7 +719,7 @@
     </style>
 </head>
 <body>
-    <!-- Header - Sadece Logo - SARI MENÜ -->
+    <!-- Header - Sadece Logo -->
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -799,22 +771,13 @@
                     </div>
                 </div>
                 
-                <!-- Sağ taraftaki büyük resim - Masaüstünde görünür -->
+                <!-- Sağ taraftaki büyük resim - Masaüstünde görünür, Mobilde gizli -->
                 <div class="hero-image-container fade-in">
                     <img src="images/boyaa3.jpeg" alt="Profesyonel Boya İşleri - Boya Eli" class="hero-image">
                     <div class="hero-image-overlay">
                         <h3 style="color: white; margin-bottom: 0.5rem;">Kaliteli İşçilik</h3>
                         <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">10+ yıllık deneyimle profesyonel çözümler</p>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Mobilde daha altta gösterilecek resim -->
-            <div class="mobile-image-container fade-in">
-                <img src="images/boyaa3.jpeg" alt="Profesyonel Boya İşleri - Boya Eli Mobil" class="hero-image">
-                <div class="hero-image-overlay">
-                    <h3 style="color: white; margin-bottom: 0.5rem;">Kaliteli İşçilik</h3>
-                    <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">10+ yıllık deneyimle profesyonel çözümler</p>
                 </div>
             </div>
         </div>
@@ -1095,11 +1058,11 @@
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
-                header.style.background = 'rgba(255, 160, 0, 0.98)';
-                header.style.boxShadow = '0 4px 20px rgba(255, 160, 0, 0.3)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = 'var(--shadow)';
             } else {
-                header.style.background = 'var(--gradient-menu)';
-                header.style.boxShadow = '0 4px 20px rgba(255, 160, 0, 0.2)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
             }
         });
 
