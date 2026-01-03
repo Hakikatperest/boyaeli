@@ -240,34 +240,60 @@
             text-decoration: none;
         }
 
-        /* Hero Image Container - TAM BOY ve DÜZGÜN GÖRÜNTÜ */
+        /* Hero Image Container - TAM BOY ve DÜZGÜN GÖRÜNTÜ - GÜNCELLENDİ */
         .hero-image-container {
-    position: relative;
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-    box-shadow: var(--shadow-xl);
-    height: 500px;
-    width: 100%;
-}
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            height: 500px;
+            width: 100%;
+        }
 
-/* Masaüstü için (768px ve üzeri) */
-@media (min-width: 768px) {
-    .hero-image-container {
-        margin-top: -3rem; /* Resmi yukarı kaydır */
-    }
-}
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
 
-/* Büyük masaüstü için (1024px ve üzeri) */
-@media (min-width: 1024px) {
-    .hero-image-container {
-        margin-top: -4rem; /* Daha fazla yukarı kaydır */
-        height: 480px; /* Biraz daha kısa */
-    }
-    
-    .hero-image {
-        height: 480px;
-    }
-}
+        .hero-image:hover {
+            transform: scale(1.02);
+        }
+
+        .hero-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+            padding: 2rem;
+            color: white;
+        }
+
+        /* Masaüstü için resmi yukarı taşı - SADECE 768px ve üzeri */
+        @media (min-width: 768px) {
+            .hero-image-container {
+                margin-top: -3rem; /* Resmi yukarı kaydır */
+            }
+        }
+
+        /* Büyük masaüstü için (1024px ve üzeri) */
+        @media (min-width: 1024px) {
+            .hero-image-container {
+                margin-top: -4rem; /* Daha fazla yukarı kaydır */
+                height: 480px; /* Biraz daha kısa */
+            }
+            
+            .hero-image {
+                height: 480px;
+            }
+            
+            .hero-content {
+                align-items: flex-start; /* İçerikleri üstten hizala */
+            }
+        }
+
         /* Mobilde Gösterilecek Resim Container */
         .mobile-image-container {
             display: none;
@@ -604,13 +630,12 @@
         }
 
         .phone-float {
-            /* DEĞİŞİKLİK: Mavi gradient yapıldı */
             position: fixed;
             bottom: 8rem;
             right: 2rem;
             width: 60px;
             height: 60px;
-            background: var(--gradient-secondary); /* Mavi gradient */
+            background: var(--gradient-secondary);
             color: white;
             border-radius: 50%;
             display: flex;
@@ -674,6 +699,7 @@
             
             .hero-image-container {
                 height: 400px;
+                margin-top: 0; /* Mobilde normal pozisyon */
             }
             
             .gallery-nav {
@@ -689,6 +715,7 @@
             /* Mobilde resmi daha altta göster */
             .hero-image-container {
                 display: none;
+                margin-top: 0; /* Mobilde normal pozisyon */
             }
             
             .mobile-image-container {
@@ -851,7 +878,6 @@
                         <p>Hemen arayın, adresinize gelip detaylı keşif yapalım ve en uygun fiyat teklifimizi sunalım.</p>
                         <a href="tel:05380740792" class="phone-large">📞 0538 074 07 92</a>
                         <div class="btn-group">
-                            <!-- Bu buton zaten mavi (btn-secondary) -->
                             <a href="tel:05380740792" class="btn btn-secondary">
                                 <i class="fas fa-phone-alt"></i> HEMEN ARA
                             </a>
@@ -1078,7 +1104,6 @@
             <p class="fade-in">Deneyimli ekibimiz, temiz işçilik anlayışımız ve zamanında teslim garantimizle evinizde ve iş yerinizde hayal ettiğiniz dönüşümü gerçeğe dönüştürüyoruz. Boya, tadilat ve dekorasyonun tüm aşamalarında güvenilir çözüm ortağınız olarak yanınızdayız.</p>
             
             <div class="btn-group fade-in" style="justify-content: center;">
-                <!-- Bu buton zaten mavi (btn-secondary) -->
                 <a href="tel:05380740792" class="btn btn-secondary btn-large">
                     <i class="fas fa-phone-alt"></i> 0538 074 07 92'Yİ ARA
                 </a>
@@ -1114,7 +1139,6 @@
                     <h4 style="color: white; margin-bottom: 1.5rem;">Hizmet Bölgelerimiz</h4>
                     <p style="color: rgba(255,255,255,0.8);">Esenyurt, Beylikdüzü, Avcılar, Küçükçekmece, Büyükçekmece, Bahçeşehir, Başakşehir ve İstanbul'un tüm semtlerine hizmet veriyoruz.</p>
                     <div class="btn-group" style="margin-top: 1.5rem;">
-                        <!-- DEĞİŞİKLİK: Bu buton mavi yapıldı (btn-primary yerine btn-secondary) -->
                         <a href="tel:05380740792" class="btn btn-secondary">
                             <i class="fas fa-phone-alt"></i> Hemen Ara
                         </a>
