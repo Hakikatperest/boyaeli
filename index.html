@@ -178,7 +178,7 @@
             color: rgba(255, 255, 255, 0.95);
         }
 
-        /* Hero Section */
+        /* Hero Section - GÜNCELLENDİ */
         .hero {
             padding-top: 10rem;
             padding-bottom: 6rem;
@@ -198,6 +198,7 @@
             border-radius: 50%;
         }
 
+        /* Hero Content GÜNCELLENDİ - CTA box grid dışına çıkarıldı */
         .hero-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -222,49 +223,78 @@
             border: 1px solid rgba(255, 160, 0, 0.2);
         }
 
-        /* Hero CTA Box - ORTALANMIŞ */
+        /* Hero CTA Box - YENİ TASARIM - SAYFANIN ORTASINDA */
+        .hero-cta-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 4rem;
+            position: relative;
+            z-index: 2;
+        }
+
         .hero-cta-box {
             background: white;
             border-radius: var(--radius-xl);
             padding: 3rem;
-            margin: 3rem auto 0;
             box-shadow: var(--shadow-lg);
             border: 1px solid rgba(255, 160, 0, 0.1);
             text-align: center;
-            max-width: 800px;
             width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
         }
 
         .hero-cta-box h3 {
             color: var(--primary);
             margin-bottom: 1rem;
             text-align: center;
+            font-size: 1.8rem;
         }
 
         .hero-cta-box p {
             text-align: center;
             max-width: 600px;
             margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
         }
 
         .phone-large {
             font-size: 2.2rem;
             font-weight: 800;
             color: var(--dark);
-            margin: 1rem 0 2rem;
+            margin: 1.5rem 0 2rem;
             display: block;
             text-decoration: none;
             text-align: center;
         }
 
-        /* Hero Image Container - TAM BOY ve DÜZGÜN GÖRÜNTÜ */
+        .hero-cta-box .btn-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .hero-cta-box .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 220px;
+            padding: 1.25rem 2.5rem;
+        }
+
+        /* Hero Image Container */
         .hero-image-container {
             position: relative;
             border-radius: var(--radius-xl);
             overflow: hidden;
             box-shadow: var(--shadow-xl);
-            height: 500px;
+            height: 480px;
             width: 100%;
+            margin-top: -2rem;
         }
 
         .hero-image {
@@ -286,29 +316,6 @@
             background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
             padding: 2rem;
             color: white;
-        }
-
-        /* Masaüstü için resmi yukarı taşı */
-        @media (min-width: 768px) {
-            .hero-image-container {
-                margin-top: -3rem;
-            }
-        }
-
-        /* Büyük masaüstü için */
-        @media (min-width: 850px) {
-            .hero-image-container {
-                margin-top: -1rem;
-                height: 480px;
-            }
-            
-            .hero-image {
-                height: 480px;
-            }
-            
-            .hero-content {
-                align-items: flex-start;
-            }
         }
 
         /* Mobilde Gösterilecek Resim Container */
@@ -615,22 +622,6 @@
             font-size: 1.25rem;
         }
 
-        /* Hero CTA Box Butonları */
-        .hero-cta-box .btn-group {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-            justify-content: center;
-        }
-
-        .hero-cta-box .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 200px;
-        }
-
         /* CTA Section Butonları */
         .cta-section .btn-group {
             display: flex;
@@ -735,6 +726,12 @@
             .hero-image-container {
                 height: 400px;
                 margin-top: 0;
+                order: 2;
+            }
+            
+            .hero-cta-wrapper {
+                order: 3;
+                margin-top: 3rem;
             }
             
             .gallery-nav {
@@ -743,10 +740,6 @@
             
             .gallery-track {
                 padding-bottom: 1rem;
-            }
-            
-            .hero-cta-box {
-                max-width: 90%;
             }
         }
 
@@ -760,6 +753,7 @@
             .mobile-image-container {
                 display: block;
                 height: 400px;
+                order: 2;
             }
             
             .header-container {
@@ -783,7 +777,7 @@
             
             .hero-cta-box {
                 padding: 2rem;
-                margin: 2rem auto 0;
+                margin: 0 auto;
                 max-width: 95%;
             }
             
@@ -924,22 +918,6 @@
                     
                     <!-- MAKALE EKLENDİ: Hero bölümü açıklama güncellendi -->
                     <p>Evinize ve iş yerinize değer katan profesyonel çözümler. Hayal ettiğiniz yaşam alanları için uzman dokunuşlar. Yaşam alanlarınızı estetik, konfor ve kaliteyle buluşturuyoruz.</p>
-                    
-                    <!-- ORTALANMIŞ HERO CTA BOX -->
-                    <div class="hero-cta-box">
-                        <h3>Ücretsiz Keşif ve Fiyat Teklifi</h3>
-                        <p>Hemen arayın, adresinize gelip detaylı keşif yapalım ve en uygun fiyat teklifimizi sunalım.</p>
-                        <a href="tel:05380740792" class="phone-large">📞 0538 074 07 92</a>
-                        <div class="btn-group">
-                            <a href="tel:05380740792" class="btn btn-secondary">
-                                <i class="fas fa-phone-alt"></i> HEMEN ARA
-                            </a>
-                            <a href="https://wa.me/905380740792?text=Merhaba,%20Boya%20Eli'nden%20ücretsiz%20keşif%20randevusu%20almak%20istiyorum." 
-                               class="btn btn-whatsapp" target="_blank">
-                                <i class="fab fa-whatsapp"></i> WHATSAPP'TAN YAZ
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 
                 <!-- Sağ taraftaki büyük resim - Masaüstünde görünür -->
@@ -948,6 +926,24 @@
                     <div class="hero-image-overlay">
                         <h3 style="color: white; margin-bottom: 0.5rem;">Kaliteli İşçilik</h3>
                         <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">10+ yıllık deneyimle profesyonel çözümler</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Box - SAYFANIN TAM ORTASINDA -->
+            <div class="hero-cta-wrapper">
+                <div class="hero-cta-box fade-in">
+                    <h3>Ücretsiz Keşif ve Fiyat Teklifi</h3>
+                    <p>Hemen arayın, adresinize gelip detaylı keşif yapalım ve en uygun fiyat teklifimizi sunalım.</p>
+                    <a href="tel:05380740792" class="phone-large">📞 0538 074 07 92</a>
+                    <div class="btn-group">
+                        <a href="tel:05380740792" class="btn btn-secondary">
+                            <i class="fas fa-phone-alt"></i> HEMEN ARA
+                        </a>
+                        <a href="https://wa.me/905380740792?text=Merhaba,%20Boya%20Eli'nden%20ücretsiz%20keşif%20randevusu%20almak%20istiyorum." 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WHATSAPP'TAN YAZ
+                        </a>
                     </div>
                 </div>
             </div>
