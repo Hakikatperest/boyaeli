@@ -242,35 +242,32 @@
 
         /* Hero Image Container - TAM BOY ve DÜZGÜN GÖRÜNTÜ */
         .hero-image-container {
-            position: relative;
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-xl);
-            height: 500px;
-            width: 100%;
-        }
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    height: 500px;
+    width: 100%;
+}
 
-        .hero-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
+/* Masaüstü için (768px ve üzeri) */
+@media (min-width: 768px) {
+    .hero-image-container {
+        margin-top: -3rem; /* Resmi yukarı kaydır */
+    }
+}
 
-        .hero-image:hover {
-            transform: scale(1.02);
-        }
-
-        .hero-image-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
-            padding: 2rem;
-            color: white;
-        }
-
+/* Büyük masaüstü için (1024px ve üzeri) */
+@media (min-width: 1024px) {
+    .hero-image-container {
+        margin-top: -4rem; /* Daha fazla yukarı kaydır */
+        height: 480px; /* Biraz daha kısa */
+    }
+    
+    .hero-image {
+        height: 480px;
+    }
+}
         /* Mobilde Gösterilecek Resim Container */
         .mobile-image-container {
             display: none;
