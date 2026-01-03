@@ -65,14 +65,13 @@
             margin-bottom: 1rem;
         }
 
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+       h1 span {
+    background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
+}
 
         h2 {
             font-size: clamp(2rem, 4vw, 2.5rem);
@@ -224,6 +223,36 @@
             margin: 1rem 0;
             display: block;
             text-decoration: none;
+        }
+
+        /* Hero Image Container */
+        .hero-image-container {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            height: 500px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .hero-image:hover {
+            transform: scale(1.02);
+        }
+
+        .hero-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+            padding: 2rem;
+            color: white;
         }
 
         /* Gallery Section - Kaydırmalı Galeri */
@@ -546,11 +575,24 @@
             font-size: 0.9rem;
         }
 
+        /* SEO için gizli içerik */
+        .seo-content {
+            display: none;
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+        }
+
         /* Responsive */
         @media (max-width: 1024px) {
             .hero-content {
                 grid-template-columns: 1fr;
                 gap: 3rem;
+            }
+            
+            .hero-image-container {
+                height: 400px;
+                order: -1; /* Mobilde resim üste gelsin */
             }
             
             .gallery-nav {
@@ -615,6 +657,10 @@
             .phone-float {
                 bottom: 7rem;
             }
+            
+            .hero-image-container {
+                height: 350px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -632,6 +678,10 @@
             
             section {
                 padding: 3rem 0;
+            }
+            
+            .hero-image-container {
+                height: 300px;
             }
         }
 
@@ -714,6 +764,15 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Sağ taraftaki büyük resim -->
+                <div class="hero-image-container fade-in">
+                    <img src="images/boyaa3.jpeg" alt="Profesyonel Boya İşleri - Boya Eli" class="hero-image">
+                    <div class="hero-image-overlay">
+                        <h3 style="color: white; margin-bottom: 0.5rem;">Kaliteli İşçilik</h3>
+                        <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">10+ yıllık deneyimle profesyonel çözümler</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -731,44 +790,45 @@
                 <div class="gallery-track" id="galleryTrack">
                     <!-- Galeri resimleri buraya eklenecek -->
                     <div class="gallery-item">
-                        <img src="images/boyaeli1.jpeg" alt="Boya İşi Örnek 1" class="gallery-image">
+                        <img src="images/boyaeli1.jpeg" alt="Boya İşi Örnek 1 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli2.jpeg" alt="Boya İşi Örnek 2" class="gallery-image">
+                        <img src="images/boyaeli2.jpeg" alt="Boya İşi Örnek 2 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli3.jpeg" alt="Boya İşi Örnek 3" class="gallery-image">
+                        <img src="images/boyaeli3.jpeg" alt="Boya İşi Örnek 3 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli4.jpeg" alt="Boya İşi Örnek 4" class="gallery-image">
+                        <img src="images/boyaeli4.jpeg" alt="Boya İşi Örnek 4 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli5.jpeg" alt="Boya İşi Örnek 5" class="gallery-image">
+                        <img src="images/boyaeli5.jpeg" alt="Boya İşi Örnek 5 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli6.jpeg" alt="Boya İşi Örnek 6" class="gallery-image">
+                        <img src="images/boyaeli6.jpeg" alt="Boya İşi Örnek 6 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli7.jpeg" alt="Boya İşi Örnek 7" class="gallery-image">
+                        <img src="images/boyaeli7.jpeg" alt="Boya İşi Örnek 7 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli8.jpeg" alt="Boya İşi Örnek 8" class="gallery-image">
+                        <img src="images/boyaeli8.jpeg" alt="Boya İşi Örnek 8 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli10.jpeg" alt="Boya İşi Örnek 10" class="gallery-image">
+                        <img src="images/boyaeli10.jpeg" alt="Boya İşi Örnek 10 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli11.jpeg" alt="Boya İşi Örnek 11" class="gallery-image">
+                        <img src="images/boyaeli11.jpeg" alt="Boya İşi Örnek 11 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli12.jpeg" alt="Boya İşi Örnek 12" class="gallery-image">
+                        <img src="images/boyaeli12.jpeg" alt="Boya İşi Örnek 12 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli13.jpeg" alt="Boya İşi Örnek 13" class="gallery-image">
+                        <img src="images/boyaeli13.jpeg" alt="Boya İşi Örnek 13 - Boya Eli" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/boyaeli14.jpeg" alt="Boya İşi Örnek 14" class="gallery-image">
+                        <img src="images/boyaeli14.jpeg" alt="Boya İşi Örnek 14 - Boya Eli" class="gallery-image">
                     </div>
+                </div>
                 <button class="gallery-nav gallery-next">›</button>
             </div>
         </div>
@@ -921,9 +981,27 @@
             
             <div class="copyright">
                 <p>&copy; 2023 Boya Eli - İstanbul Boya Badana Hizmetleri. Tüm hakları saklıdır.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.5);">
+                    Dijital pazarlama desteği: 
+                    <a href="https://www.adsreklamvermek.com" 
+                       target="_blank" 
+                       rel="nofollow" 
+                       style="color: rgba(255,255,255,0.7); text-decoration: none;">
+                        Ads Reklam Vermek
+                    </a>
+                </p>
             </div>
         </div>
     </footer>
+
+    <!-- SEO için gizli içerik -->
+    <div class="seo-content" aria-hidden="true">
+        <h3>İlgili Hizmetler</h3>
+        <p>Profesyonel boya hizmetleri yanı sıra, işletmenizin dijital pazarlama ihtiyaçları için 
+           <a href="https://www.adsreklamvermek.com">Ads Reklam Vermek</a> ile çalışıyoruz.
+        </p>
+        <p>İstanbul boyacı, Esenyurt boya ustası, profesyonel boya badana hizmetleri.</p>
+    </div>
 
     <script>
         // Galeri kaydırma fonksiyonları
@@ -931,20 +1009,22 @@
         const prevButton = document.querySelector('.gallery-prev');
         const nextButton = document.querySelector('.gallery-next');
 
-        prevButton.addEventListener('click', () => {
-            galleryTrack.scrollBy({ left: -350, behavior: 'smooth' });
-        });
+        if (prevButton && nextButton) {
+            prevButton.addEventListener('click', () => {
+                galleryTrack.scrollBy({ left: -350, behavior: 'smooth' });
+            });
 
-        nextButton.addEventListener('click', () => {
-            galleryTrack.scrollBy({ left: 350, behavior: 'smooth' });
-        });
+            nextButton.addEventListener('click', () => {
+                galleryTrack.scrollBy({ left: 350, behavior: 'smooth' });
+            });
+        }
 
         // Otomatik kaydırma (opsiyonel)
         let autoScroll = true;
         let scrollInterval;
 
         function startAutoScroll() {
-            if (autoScroll) {
+            if (autoScroll && galleryTrack) {
                 scrollInterval = setInterval(() => {
                     if (galleryTrack.scrollLeft + galleryTrack.clientWidth >= galleryTrack.scrollWidth - 10) {
                         galleryTrack.scrollTo({ left: 0, behavior: 'smooth' });
@@ -960,11 +1040,13 @@
         }
 
         // Galeri üzerine gelince otomatik kaydırmayı durdur
-        galleryTrack.addEventListener('mouseenter', stopAutoScroll);
-        galleryTrack.addEventListener('mouseleave', startAutoScroll);
+        if (galleryTrack) {
+            galleryTrack.addEventListener('mouseenter', stopAutoScroll);
+            galleryTrack.addEventListener('mouseleave', startAutoScroll);
 
-        // Başlangıçta otomatik kaydırmayı başlat
-        startAutoScroll();
+            // Başlangıçta otomatik kaydırmayı başlat
+            startAutoScroll();
+        }
 
         // Header scroll efekti
         window.addEventListener('scroll', function() {
@@ -1009,13 +1091,6 @@
                 console.log('WhatsApp click tracked');
             });
         });
-        <div style="display: none;" aria-hidden="true">
-    <h3>İlgili Hizmetler</h3>
-    <p>Profesyonel boya hizmetleri yanı sıra, işletmenizin dijital pazarlama ihtiyaçları için 
-       <a href="https://www.adsreklamvermek.com">Ads Reklam Vermek</a> ile çalışıyoruz.
-    </p>
-    <p>İstanbul boyacı, Esenyurt boya ustası, profesyonel boya badana hizmetleri.</p>
-</div>
     </script>
 </body>
 </html>
