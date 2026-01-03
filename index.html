@@ -65,13 +65,23 @@
             margin-bottom: 1rem;
         }
 
-       h1 span {
-    background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
-}
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 span {
+            background: linear-gradient(135deg, #FFC107 0%, #FFA000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
+        }
 
         h2 {
             font-size: clamp(2rem, 4vw, 2.5rem);
@@ -583,7 +593,7 @@
             overflow: hidden;
         }
 
-        /* Responsive */
+        /* Responsive - Sadece Mobilde Resmi Gizle */
         @media (max-width: 1024px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -592,7 +602,6 @@
             
             .hero-image-container {
                 height: 400px;
-                order: -1; /* Mobilde resim üste gelsin */
             }
             
             .gallery-nav {
@@ -605,6 +614,11 @@
         }
 
         @media (max-width: 768px) {
+            /* Mobilde resmi gizle */
+            .hero-image-container {
+                display: none;
+            }
+            
             .header-container {
                 height: 60px;
             }
@@ -657,10 +671,6 @@
             .phone-float {
                 bottom: 7rem;
             }
-            
-            .hero-image-container {
-                height: 350px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -678,10 +688,6 @@
             
             section {
                 padding: 3rem 0;
-            }
-            
-            .hero-image-container {
-                height: 300px;
             }
         }
 
@@ -745,7 +751,7 @@
                         <span>10+ Yıllık Deneyim • İstanbul'un Her Semtinde</span>
                     </div>
                     
-                    <h1>Profesyonel <span style="color: var(--primary);">Boya Badana</span> İşleriniz İçin Güvenilir Çözüm</h1>
+                    <h1>Profesyonel <span>Boya Badana</span> İşleriniz İçin Güvenilir Çözüm</h1>
                     
                     <p>Ev, ofis, işyeri veya apartmanınız için kaliteli boya, badana ve tadilat hizmeti. İstanbul'un tüm semtlerinde 10 yılı aşkın tecrübemizle hizmetinizdeyiz.</p>
                     
@@ -765,7 +771,7 @@
                     </div>
                 </div>
                 
-                <!-- Sağ taraftaki büyük resim -->
+                <!-- Sağ taraftaki büyük resim - Masaüstünde görünür, Mobilde gizli -->
                 <div class="hero-image-container fade-in">
                     <img src="images/boyaa3.jpeg" alt="Profesyonel Boya İşleri - Boya Eli" class="hero-image">
                     <div class="hero-image-overlay">
