@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boya Eli | İstanbul Boya Badana Ustası 0538 074 07 92 | Her Semte Hizmet</title>
+    <meta name="description" content="Boya Eli - İstanbul'un her semtinde 10+ yıllık deneyimle profesyonel boya, badana, tadilat hizmeti. Ücretsiz keşif için 0538 074 07 92'yi arayın.">
+    <meta name="keywords" content="boya eli, istanbul boyacı, boya badana ustası, iç cephe boyama, dış cephe boyama, tadilat, alçıpan, sıva, istanbul boya ustası, esenyurt boyacı">
+    <meta name="author" content="Boya Eli">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Boya Eli",
+        "image": "",
+        "telephone": "+905380740792",
+        "email": "info@boya-eli.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Akçaburgaz Mahallesi, 3016 Sokak, No:3",
+            "addressLocality": "Esenyurt",
+            "addressRegion": "İstanbul",
+            "addressCountry": "TR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "41.0451",
+            "longitude": "28.6650"
+        },
+        "url": "https://www.boya-eli.com",
+        "priceRange": "₺₺",
+        "openingHours": "Mo-Su 08:00-20:00",
+        "description": "İstanbul'un her semtinde profesyonel boya, badana ve tadilat hizmetleri sunan 10+ yıllık deneyimli ekip."
+    }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --primary: #2A5CAA;
+            --primary-dark: #1E4785;
+            --primary-light: #4A7DC3;
+            --secondary: #FF6B35;
+            --secondary-dark: #E55A2B;
+            --accent: #FFD166;
+            --dark: #1A1A2E;
+            --darker: #0D0D19;
+            --light: #F8F9FA;
+            --gray: #6C757D;
+            --gray-light: #E9ECEF;
+            --whatsapp: #25D366;
+            --success: #06D6A0;
+            --gradient: linear-gradient(135deg, #2A5CAA 0%, #1E4785 100%);
+            --gradient-secondary: linear-gradient(135deg, #FF6B35 0%, #E55A2B 100%);
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow: 0 4px 16px rgba(0,0,0,0.12);
+            --shadow-lg: 0 8px 32px rgba(0,0,0,0.18);
+            --shadow-xl: 0 12px 48px rgba(0,0,0,0.22);
+            --radius: 10px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: #ffffff;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 1.75rem);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+            font-size: 1.05rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: clamp(3rem, 6vw, 5rem) 0;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            padding: 1rem 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 0.75rem 0;
+            box-shadow: var(--shadow);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--dark);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        .logo-text .slogan {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--gray);
+            margin-top: 2px;
+        }
+
+        .mobile-contact {
+            display: none;
+        }
+
+        .mobile-contact a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--gradient);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section - Conversion Focused */
+        .hero {
+            padding-top: 12rem;
+            padding-bottom: 6rem;
+            background: linear-gradient(135deg, #f0f5ff 0%, #e6eeff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(42, 92, 170, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            color: var(--primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .hero-badge i {
+            color: var(--secondary);
+        }
+
+        .hero-cta-box {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            margin-top: 3rem;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--gray-light);
+        }
+
+        .hero-cta-box h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .hero-cta-box .phone-large {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin: 1rem 0;
+            display: block;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--gray-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(42, 92, 170, 0.1) 0%, rgba(42, 92, 170, 0.05) 100%);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            font-size: 1.75rem;
+        }
+
+        /* Why Choose Us */
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2.5rem;
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.75rem;
+        }
+
+        /* Process Section */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Contact Section - Optimized for Conversion */
+        .contact-section {
+            background: linear-gradient(135deg, #2A5CAA 0%, #1E4785 100%);
+            color: white;
+            border-radius: var(--radius-xl);
+            margin: 4rem auto;
+            padding: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .contact-section h2 {
+            color: white;
+        }
+
+        .contact-section p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* WhatsApp Fixed Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: var(--whatsapp);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            text-decoration: none;
+            box-shadow: var(--shadow-xl);
+            z-index: 999;
+            transition: var(--transition);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Phone Fixed Button */
+        .phone-float {
+            position: fixed;
+            bottom: 8rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: var(--shadow-xl);
+            z-index: 999;
+            transition: var(--transition);
+            animation: pulse-phone 2s infinite;
+        }
+
+        .phone-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Buttons - Optimized for CTA */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--gradient-secondary);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-whatsapp {
+            background: var(--whatsapp);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-large {
+            padding: 1.5rem 3rem;
+            font-size: 1.25rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--darker);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-contact h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design - Mobile First */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            
+            .mobile-contact {
+                display: block;
+                width: 100%;
+                order: 3;
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .hero {
+                padding-top: 10rem;
+                padding-bottom: 4rem;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .hero-cta-box {
+                padding: 2rem;
+            }
+            
+            .hero-cta-box .phone-large {
+                font-size: 1.75rem;
+            }
+            
+            .contact-section {
+                padding: 3rem 1.5rem;
+                margin: 3rem 1rem;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .whatsapp-float,
+            .phone-float {
+                bottom: 1.5rem;
+                right: 1.5rem;
+                width: 55px;
+                height: 55px;
+                font-size: 1.5rem;
+            }
+            
+            .phone-float {
+                bottom: 7rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .logo-text {
+                font-size: 1.5rem;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.25rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .service-card,
+            .feature-card {
+                padding: 2rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes pulse-phone {
+            0% {
+                box-shadow: 0 0 0 0 rgba(42, 92, 170, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(42, 92, 170, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(42, 92, 170, 0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-paint-roller"></i>
+                </div>
+                <div class="logo-text">
+                    BOYA ELİ
+                    <span class="slogan">İstanbul'un Her Semtinde</span>
+                </div>
+            </a>
+
+            <div class="mobile-contact">
+                <a href="tel:05380740792">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>0538 074 07 92</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/905380740792?text=Merhaba,%20Boya%20Eli'nden%20boya%20badana%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum." 
+       class="whatsapp-float" target="_blank" aria-label="WhatsApp ile iletişim">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Fixed Phone Button -->
+    <a href="tel:05380740792" class="phone-float" aria-label="Telefon ile arama">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span>10+ Yıllık Deneyim • %100 Müşteri Memnuniyeti</span>
+                    </div>
+                    
+                    <h1>İstanbul'un Her Semtinde Profesyonel <span style="color: var(--primary);">Boya Badana</span> Hizmeti</h1>
+                    
+                    <p>Ev, ofis, işyeri, apartman... İstanbul'un her bölgesinde 10 yılı aşkın deneyimimizle kaliteli malzeme ve uzman ekibimizle boya, badana ve tadilat işlerinizi profesyonelce tamamlıyoruz.</p>
+                    
+                    <div class="hero-cta-box fade-in">
+                        <h3>Ücretsiz Keşif ve Fiyat Teklifi</h3>
+                        <p>Hemen arayın, adresinize gelip ücretsiz keşif yapalım ve en uygun fiyat teklifimizi sunalım.</p>
+                        <a href="tel:05380740792" class="phone-large">0538 074 07 92</a>
+                        <div class="btn-group">
+                            <a href="tel:05380740792" class="btn btn-secondary">
+                                <i class="fas fa-phone-alt"></i> HEMEN ARA
+                            </a>
+                            <a href="https://wa.me/905380740792?text=Merhaba,%20Boya%20Eli'nden%20ücretsiz%20keşif%20randevusu%20almak%20istiyorum." 
+                               class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WHATSAPP'TAN YAZ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image fade-in">
+                    <div class="feature-card" style="margin-bottom: 2rem;">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>İç Cephe Boyama</h3>
+                        <p>Ev ve ofisleriniz için kaliteli iç cephe boyama hizmeti</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Dış Cephe Boyama</h3>
+                        <p>Bina ve villa dış cephelerinde profesyonel çözümler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hizmetlerimiz</h2>
+                <p>İhtiyacınıza özel profesyonel çözümler sunuyoruz</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>İç Cephe Boyama</h3>
+                    <p>Su bazlı, silinebilir, tavan ve duvar boyaları ile ev ve ofislerinize yeni bir görünüm kazandırıyoruz.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Dış Cephe Boyama</h3>
+                    <p>Silikonlu, su bazlı dış cephe boyaları ile binalarınızı uzun yıllar koruyoruz.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Alçıpan & Sıva İşleri</h3>
+                    <p>Alçıpan bölme duvar, asma tavan, sıva ve badana işlerinde uzman ekibimizle hizmetinizdeyiz.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Tadilat & Onarım</h3>
+                    <p>Çatlak tamiri, badana, boya öncesi hazırlık ve diğer tadilat işleriniz için profesyonel çözümler.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <h3>Özel Boya Teknikleri</h3>
+                    <p>Dekoratif boyalar, duvar kağıdı, özel dokular ve tasarım boyama işlemleri.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Renk Danışmanlığı</h3>
+                    <p>Mekanınıza en uygun renk seçimi için profesyonel danışmanlık hizmeti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" style="background: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Neden Boya Eli?</h2>
+                <p>Bizi tercih etmeniz için 6 önemli neden</p>
+            </div>
+            
+            <div class="why-us-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>10+ Yıl Deneyim</h3>
+                    <p>10 yılı aşkın sektör tecrübemizle her türlü projeyi başarıyla tamamlıyoruz.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Kaliteli Malzeme</h3>
+                    <p>Sadece güvenilir markaların kaliteli boyalarını ve malzemelerini kullanıyoruz.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Uzman Ekip</h3>
+                    <p>Her biri alanında uzmanlaşmış, deneyimli ve titiz çalışan ekibimiz.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Zamanında Teslimat</h3>
+                    <p>Verilen sürede işinizi eksiksiz tamamlama garantisi.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Uygun Fiyat</h3>
+                    <p>Kaliteden ödün vermeden en uygun fiyatları sunuyoruz.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h3>%100 Memnuniyet</h3>
+                    <p>Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Çalışma Sürecimiz</h2>
+                <p>4 adımda profesyonel hizmet</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Ücretsiz Keşif</h3>
+                    <p>Adresinize gelip detaylı keşif yapıyor ve fiyat teklifi hazırlıyoruz.</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Planlama</h3>
+                    <p>Renk seçimi ve çalışma planını birlikte belirliyoruz.</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Profesyonel Uygulama</h3>
+                    <p>Uzman ekibimizle işinizi titizlikle tamamlıyoruz.</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Teslimat & Temizlik</h3>
+                    <p>İş bitiminde temizlik yapıp mekanı size teslim ediyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hemen Ücretsiz Keşif İsteyin!</h2>
+                <p>İstanbul'un her semtine hizmet veriyoruz. Hemen arayın, adresinize gelip ücretsiz keşif yapalım.</p>
+            </div>
+            
+            <div class="btn-group" style="justify-content: center;">
+                <a href="tel:05380740792" class="btn btn-secondary btn-large">
+                    <i class="fas fa-phone-alt"></i> 0538 074 07 92'Yİ ARA
+                </a>
+                <a href="https://wa.me/905380740792?text=Merhaba,%20Boya%20Eli'nden%20ücretsiz%20keşif%20randevusu%20almak%20istiyorum." 
+                   class="btn btn-whatsapp btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WHATSAPP'TAN MESAJ GÖNDER
+                </a>
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem; font-size: 1.1rem;">
+                <i class="fas fa-map-marker-alt"></i> Akçaburgaz Mahallesi, 3016 Sokak, No:3 Esenyurt İstanbul
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>BOYA ELİ</h4>
+                    <p>İstanbul'un her semtinde 10+ yıllık deneyimle profesyonel boya, badana ve tadilat hizmetleri sunuyoruz. Müşteri memnuniyeti odaklı çalışma prensibimizle hizmetinizdeyiz.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>İletişim Bilgileri</h4>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:05380740792" style="color: white; text-decoration: none;">0538 074 07 92</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Akçaburgaz Mahallesi, 3016 Sokak, No:3 Esenyurt İstanbul</p>
+                    <p><i class="fas fa-clock"></i> Hergün: 08:00 - 20:00</p>
+                    <p><i class="fas fa-envelope"></i> info@boya-eli.com</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Hizmet Bölgelerimiz</h4>
+                    <p>Esenyurt, Beylikdüzü, Avcılar, Küçükçekmece, Büyükçekmece, Bahçeşehir, Başakşehir ve İstanbul'un tüm semtleri</p>
+                    <div class="btn-group" style="margin-top: 1.5rem;">
+                        <a href="tel:05380740792" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">
+                            <i class="fas fa-phone-alt"></i> Hemen Ara
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Boya Eli - İstanbul Boya Badana Hizmetleri. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .feature-card, .process-step').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Phone call tracking
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'phone_call', {
+                        'event_category': 'Contact',
+                        'event_label': 'Phone Call - 0538 074 07 92'
+                    });
+                }
+                console.log('Phone call tracked: 0538 074 07 92');
+            });
+        });
+
+        // WhatsApp click tracking
+        document.querySelectorAll('a[href*="whatsapp"]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'whatsapp_click', {
+                        'event_category': 'Contact',
+                        'event_label': 'WhatsApp Message'
+                    });
+                }
+                console.log('WhatsApp click tracked');
+            });
+        });
+
+        // Mobile menu toggle (if needed in future)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
