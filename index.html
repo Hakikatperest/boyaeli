@@ -222,25 +222,42 @@
             border: 1px solid rgba(255, 160, 0, 0.2);
         }
 
+        /* Hero CTA Box - ORTALANMIŞ */
         .hero-cta-box {
             background: white;
             border-radius: var(--radius-xl);
             padding: 3rem;
-            margin-top: 3rem;
+            margin: 3rem auto 0;
             box-shadow: var(--shadow-lg);
             border: 1px solid rgba(255, 160, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .hero-cta-box h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .hero-cta-box p {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
         }
 
         .phone-large {
             font-size: 2.2rem;
             font-weight: 800;
             color: var(--dark);
-            margin: 1rem 0;
+            margin: 1rem 0 2rem;
             display: block;
             text-decoration: none;
+            text-align: center;
         }
 
-        /* Hero Image Container - TAM BOY ve DÜZGÜN GÖRÜNTÜ - GÜNCELLENDİ */
+        /* Hero Image Container - TAM BOY ve DÜZGÜN GÖRÜNTÜ */
         .hero-image-container {
             position: relative;
             border-radius: var(--radius-xl);
@@ -271,18 +288,18 @@
             color: white;
         }
 
-        /* Masaüstü için resmi yukarı taşı - SADECE 768px ve üzeri */
+        /* Masaüstü için resmi yukarı taşı */
         @media (min-width: 768px) {
             .hero-image-container {
-                margin-top: -3rem; /* Resmi yukarı kaydır */
+                margin-top: -3rem;
             }
         }
 
-        /* Büyük masaüstü için (1024px ve üzeri) */
+        /* Büyük masaüstü için */
         @media (min-width: 850px) {
             .hero-image-container {
-                margin-top: -1rem; /* Daha fazla yukarı kaydır */
-                height: 480px; /* Biraz daha kısa */
+                margin-top: -1rem;
+                height: 480px;
             }
             
             .hero-image {
@@ -290,7 +307,7 @@
             }
             
             .hero-content {
-                align-items: flex-start; /* İçerikleri üstten hizala */
+                align-items: flex-start;
             }
         }
 
@@ -598,11 +615,29 @@
             font-size: 1.25rem;
         }
 
-        .btn-group {
+        /* Hero CTA Box Butonları */
+        .hero-cta-box .btn-group {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
             margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .hero-cta-box .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 200px;
+        }
+
+        /* CTA Section Butonları */
+        .cta-section .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            justify-content: center;
         }
 
         /* Fixed Buttons */
@@ -699,7 +734,7 @@
             
             .hero-image-container {
                 height: 400px;
-                margin-top: 0; /* Mobilde normal pozisyon */
+                margin-top: 0;
             }
             
             .gallery-nav {
@@ -709,13 +744,17 @@
             .gallery-track {
                 padding-bottom: 1rem;
             }
+            
+            .hero-cta-box {
+                max-width: 90%;
+            }
         }
 
         @media (max-width: 768px) {
             /* Mobilde resmi daha altta göster */
             .hero-image-container {
                 display: none;
-                margin-top: 0; /* Mobilde normal pozisyon */
+                margin-top: 0;
             }
             
             .mobile-image-container {
@@ -744,23 +783,28 @@
             
             .hero-cta-box {
                 padding: 2rem;
+                margin: 2rem auto 0;
+                max-width: 95%;
             }
             
             .phone-large {
                 font-size: 1.8rem;
+                margin: 1rem 0 1.5rem;
             }
             
             .cta-section {
                 padding: 3rem 1.5rem;
             }
             
-            .btn-group {
+            .hero-cta-box .btn-group {
                 flex-direction: column;
+                gap: 0.75rem;
             }
             
-            .btn {
+            .hero-cta-box .btn {
                 width: 100%;
                 justify-content: center;
+                min-width: auto;
             }
             
             .whatsapp-float,
@@ -804,6 +848,14 @@
             }
             
             .article-content h3 {
+                font-size: 1.3rem;
+            }
+            
+            .hero-cta-box {
+                padding: 1.5rem;
+            }
+            
+            .hero-cta-box h3 {
                 font-size: 1.3rem;
             }
         }
@@ -873,8 +925,9 @@
                     <!-- MAKALE EKLENDİ: Hero bölümü açıklama güncellendi -->
                     <p>Evinize ve iş yerinize değer katan profesyonel çözümler. Hayal ettiğiniz yaşam alanları için uzman dokunuşlar. Yaşam alanlarınızı estetik, konfor ve kaliteyle buluşturuyoruz.</p>
                     
+                    <!-- ORTALANMIŞ HERO CTA BOX -->
                     <div class="hero-cta-box">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Ücretsiz Keşif ve Fiyat Teklifi</h3>
+                        <h3>Ücretsiz Keşif ve Fiyat Teklifi</h3>
                         <p>Hemen arayın, adresinize gelip detaylı keşif yapalım ve en uygun fiyat teklifimizi sunalım.</p>
                         <a href="tel:05380740792" class="phone-large">📞 0538 074 07 92</a>
                         <div class="btn-group">
@@ -1103,7 +1156,7 @@
             <!-- MAKALE EKLENDİ: CTA bölümü açıklama güncellendi -->
             <p class="fade-in">Deneyimli ekibimiz, temiz işçilik anlayışımız ve zamanında teslim garantimizle evinizde ve iş yerinizde hayal ettiğiniz dönüşümü gerçeğe dönüştürüyoruz. Boya, tadilat ve dekorasyonun tüm aşamalarında güvenilir çözüm ortağınız olarak yanınızdayız.</p>
             
-            <div class="btn-group fade-in" style="justify-content: center;">
+            <div class="btn-group fade-in">
                 <a href="tel:05380740792" class="btn btn-secondary btn-large">
                     <i class="fas fa-phone-alt"></i> 0538 074 07 92'Yİ ARA
                 </a>
